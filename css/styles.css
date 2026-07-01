@@ -243,10 +243,14 @@ img {
 }
 
 .about-bio {
-  margin: 0;
+  margin: 0 0 1rem;
   text-align: left;
   font-size: 1.05rem;
   color: var(--ink-soft);
+}
+
+.about-bio:last-of-type {
+  margin-bottom: 0;
 }
 
 .education-cards {
@@ -383,18 +387,21 @@ img {
   background: linear-gradient(180deg, var(--cream-card) 0%, var(--cream) 100%);
 }
 
-.writing-card::before {
-  content: "✍️";
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
 .writing-kicker {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.75rem;
   color: var(--burgundy);
   margin: 0 0 0.5rem;
+}
+
+.writing-thumb {
+  display: block;
+  width: calc(100% + 1.5rem);
+  height: auto;
+  max-width: none;
+  margin: 0 -0.75rem 0.75rem;
+  border-radius: 10px;
 }
 
 .writing-card h3 {
